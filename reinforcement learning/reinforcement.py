@@ -10,7 +10,7 @@ def basic_policy(obs): # determines what action to take
 
 totals = [] # list of the total reward accumulated for each episode, 10
 
-for episode in range(10):
+for episode in range(1000):
     episode_rewards = 0 # the rewards for the episode, in this case just "staying alive" or running as long as possible
     obs = env.reset() # initial obersevation, carts horizontal positon (0.0 for center), carts velocity, pole angle, angular velocity (how fast the pole is falling)  
     action = 1 # move the cart left or right
